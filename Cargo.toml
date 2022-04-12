@@ -15,7 +15,7 @@ keywords      = ["user", "agent", "parser", "uap", "uaparser"]
 
 [dependencies]
 lazy_static = "1.4.0"
-regex = "1.5.4"
+regex = { version = "1.5.4", features = ["perf", "perf-dfa", "perf-inline", "perf-literal", "perf-cache"] }
 serde = "1.0.110"
 serde_yaml = "0.8.12"
 serde_derive = "1.0.110"
